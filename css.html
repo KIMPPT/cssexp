@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기본연습</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <h1>CSS 기본연습</h1>
+    <p>rgba(R,G,B,A) : RGB에 Alpha(투명도)를 추가한 색 옵션이다. <br>
+        RGB는 0~255까지, A는 0(완전투명~1(불투명)-소수점1자리 까지 설정 할 수 있다.</p>
+    <h2>background</h2>
+    <p>
+        backround-color와 같이 backround에서 값을 세분화하여 넣을 수도 있지만 <br>
+        backround를 통해서 한번에 넣을수도 있다.
+    </p>
+    <p>
+        image를 이용하여 여러가지 이미지를 넣을 수 있고 필요하다면 <br>
+        그라데이션 색상도 추가 할 수 있다. <br>
+        attachment, position, repeat를 이용하여 이미지의 <br>
+        위치나 반복을 변경 할 수도 있다.
+    </p>
+    <h2 CLASS="textcenter">
+        TEXT에 관한 스타일
+    </h2>
+    <p class="textcenter textdeco">
+        display가 block인 글자는 중앙정렬이 된다.
+    </p>
+    <div class="textcenter">
+        <a href="" class="textcenter"> display이가 inline인 글자</a> <br>
+        <a href="">
+            inline은 align이 통하지 않으므로 <br>
+            div(block)에 넣어 설정을 하면 중앙정렬이 된다.
+        </a>
+    </div>
+    <p>
+        text-decoration을 이용하면 글자를 꾸며 줄 수 있다(밑줄형태) <br>
+        a태그와 같이 이미 글자에 꾸밈이 들어가 있는 경우 제거가 가능하다.
+    </p>
+    <p class="textshadow">
+        글자에 그림자 기능
+    </p>
+    <p class="test">
+        파란색
+    </p>
+    <h2 class="fontmonospace">
+        폰트 종류
+    </h2>
+    <p class="fontmonospace">
+        font
+    </p>
+    <p>
+        font-family를 통해서 원하는 폰트로 출력가능 <br>
+        현재 컴퓨터에 설치된 폰트만 가능. <b>파일을 가지고만 있으면 안됨</b> 
+    </p>
+    <p class="fontweight">
+        폰트두께
+    </p>
+    <p>
+        css 속성 중에 text와 font로 나눈다. <br>
+        text의 경우 css를 통해서 추가적인 내용이 들어가는 경우 <br>
+        font의 경우 자체에서 줄 수 있는 부분을 수정(글자자체 옵션)
+    </p>
+    <h2>link 상태에 따른 css 옵션</h2>
+    <div class="linkstatus">
+        <a href="#">링크</a>
+    </div>
+    <p class="phover">
+        a태그는 상태에 따라서 디자인을 따로 넣어 줄 수 있다. <br>
+        상태를 작성할 때는 a태그 바로 뒤어 :상태 를 통해 선택 할 수 있다 <br>
+        예: 클래스이름 a:link{} <br>
+        :hover에 경우는 다른 태그에도 적용 할 수 있다. <br>
+        inline이면 해당 글자까지고 block이면 해당 가로 끝까지이다.
+    </p>
+    <h2>
+        리스트
+    </h2>
+    <ul class="markerstyle">
+        <li>
+            마커 스타일 변경
+        </li>
+    </ul>
+    <h2>
+        테이블
+    </h2>
+    <table class="tablestyle">
+        <tr>
+            <th>
+                제목
+            </th>
+            <td>
+                이름    
+            </td>
+            <td>
+                주소
+            </td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>서울</td>
+        </tr>
+    </table>
+    <table class="tabelcel">
+        <tr>
+            <td>
+                책 제목
+            </td>
+            <td>
+                가격
+            </td>
+        </tr>
+        <tr>
+            <td>
+                개미
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+h1{color:rgba(12, 34, 56, 0.5)}
+
+body{
+    background-image:linear-gradient(rgba(0,0,255,0.1),
+    rgba(255,0,0,0.1)), url(./image/sparrow.jpg);
+    /*괄호의 경우 필히 붙여야 한다. 띄우면 다른값으로 인식한다.*/
+    background-repeat: no-repeat;
+    background-position:right;
+    background-attachment:fixed;
+    }
+.textcenter{text-align:center;}
+.textdeco{
+    text-decoration: underline dashed 5px black;
+}
+a{text-decoration: none;
+text-decoration-line: overline;
+text-decoration-color:red;
+text-decoration-style:wavy;
+text-decoration-thickness:15px;
+}
+.textshadow{text-shadow:3px 3px 3px blue;}
+.test{
+    color:blue;
+}
+.fontmonospace{
+    font-family:vivaldi,"CookieRun Black";   
+}
+.fontweight{font-weight:lighter;
+            font-size:25px;}
+            /*띄워쓰기 사용 : linkstatus클래스 안에있는 a태그에 접근*/
+.linkstatus a:link{color:olive;}
+.linkstatus a:visited{color:brown}
+.linkstatus a:hover{color:coral}
+.linkstatus a:active{color:aqua}
+/*클래스 이름 뒤에 상태를 붙여서 사용 할 수 있다.*/
+.phover:hover{color:white}
+.markerstyle{list-style-type:square;
+            list-style-image:url(./image/pencil2.png);
+            list-style-position:inside
+            }
+/*두개 이상의 태그나 클래스에 동일한 디자인을 넣을려고 한다면
+,를 통해서 복수선택을 할 수 있다.*/
+.tablestyle, .tablestyle th{border:1px solid black;}
+.tablestyle td{border:1px solid red}
+.tablestyle {border-collapse:collapse;}
+.tabelcel{ border:1px dotted black;}
+.tabelcel td{border:3px double red;}
+.tabelcel {empty-cells:show;}
