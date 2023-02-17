@@ -1,0 +1,46 @@
+.backgroundcolor{
+    background-color:orange;
+}
+.inlineblock{
+    display:inline-block;
+    width:300px;
+    height:300px;
+}
+.hidden{
+    visibility:hidden;
+}
+.none{
+    display:none;
+}
+.opacity{opacity:74%;
+    color:red;
+background-color:blue}
+.box{
+    /*display:inline-block;*/
+    width:150px;
+    height:150px;
+    background-color:greenyellow;
+}
+.staticposition{
+    position:static;
+    left:30px;
+}
+.relativeposition{
+    /*상대 위치를 쓴다는 알림*/
+    position:relative;
+    left:30px;
+    top:-30px;
+}
+.fixedposition{
+    position:fixed;
+    top:200px;
+    left:450px;
+}
+.parentbox{
+    height:500px;
+}
+.absoluteposition{
+    position:absolute;
+    top:200px;
+    left:150px;
+}
