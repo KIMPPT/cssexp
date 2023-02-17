@@ -1,5 +1,6 @@
-h1{font-family:궁서}
+h1{font-family:fantasy;text-shadow: 1px 2px 3px rgba(0,0,0,0.5);}
 .divbox{border:5px solid brown;background-color:burlywood;width:500px}
 .tablemark{list-style-type:circle;}
-.daum a:hover, .naver a:hover, .google a:hover{font-style:italic;text-shadow:2px 0px }
+.tablemark a{text-decoration:none; color:black;font-weight:bold;}
+.tablemark a:hover{font-style:italic;text-shadow:2px 0px 3px rgba(0,0,0,0.5)}
 .list{font-family:궁서;color:green;text-decoration: underline 2px red wavy;}
