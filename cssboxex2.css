@@ -1,0 +1,10 @@
+.gotohome{
+    background-color:orange;
+    border-style:none;border-radius:20px;
+    padding:10px;
+    text-decoration-line:none;
+}
+.gotohome:hover{
+    background-color:red;
+    border-bottom:5px green solid;
+}
