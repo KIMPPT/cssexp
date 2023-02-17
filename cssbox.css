@@ -49,3 +49,9 @@ border-left:outset 10px red;
 .widthheight{width:500px;height:300px;border:black 2px dotted}
 .boxlayout{box-sizing:border-box;height:30px;padding:2px;border:solid 2px black;}
 .boxlayout2{box-sizing:content-box;height:30px;padding:2px;border:solid 1px black;}
+
+.outline{
+    outline-style:solid;
+    outline-width:3px;
+    outline-color:black;
+}
