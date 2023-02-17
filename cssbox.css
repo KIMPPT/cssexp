@@ -1,0 +1,42 @@
+.textsize{font-size:100%;}
+.textsize2{font-size:2em;}
+.textinem{font-size:0.4em;}
+.textrem{font-size:2rem;}
+.textinrem{font-size:1rem;}
+.width{border:solid red 2px;max-width:700px;min-width:600px;}
+.height{border:dotted blue 5px;height:100%;max-height:300px;min-width:100px;}
+.heightbox{border:double green 3px; height:300px;background-color:aqua}
+.myborder{border:solid 3px black; width:300px}
+.paddingtop{padding-top:10px;}
+.paddingleft{padding-left:50px}
+.paddingbottom{padding-bottom:30px;}
+.paddingright{padding-right:20px;}
+/*4개 모두 입력 시 위,오른쪽,아래,왼쪽*/
+.padding{padding:10px 20px 5px 30px}
+/*2개만 입력시에는 상하/좌우 값*/
+.paddingy{padding:10px 0;}
+.bordergroove{border-top:groove 10px blue;
+border-left:groove 10px red;
+border-bottom:groove 10px blue;
+    border-right:groove 10px red;
+    width:250px;}
+.borderridge{border-top:ridge 10px blue;
+    border-left:ridge 10px red;
+    border-bottom:ridge 10px blue;
+    border-right:ridge 10px red;
+width:250px;}
+.borderinset{border-top:inset 10px blue;
+     border-left:inset 10px red;
+     border-bottom:inset 10px blue;
+     border-right:inset 10px red;
+     width:250px;}
+     .borderoutset{
+        border-top:outset 10px blue;
+border-left:outset 10px red;
+        border-bottom:outset 10px blue;
+        border-right:outset 10px red;
+        width:250px;}
+        .bordernone{border:solid 3px black;
+        border-bottom:none;border-bottom-width:5px;}
+        .borderhidden{border:solid 3px blue;
+        border-top:hidden;border-top-color:transparent;}
