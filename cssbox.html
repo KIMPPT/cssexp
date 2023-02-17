@@ -118,10 +118,56 @@
     <p class="borderhidden">
         테두리 스타일-숨김
     </p>
-    <p>
-        none과 hidden의 차이 <br>
-        
+    <h1>
+        margine
+    </h1>
+    <p class="margintop myborder">
+        margin-top
     </p>
+    <a class="marginleft myborder">
+        margin-left
+    </a>
+    <a class="myborder">margin-left확인용</a>
+    <a class="myborder marginparent">
+        부모로 부터 받은 margin
+    </a><br>
+    <p class="marginbottom myborder">
+        margin-bottom
+    </p>
+    <a class="marginright myborder">
+        margin-right
+    </a>
+    <a class="myborder"> margine-right확인용</a><br>
+
+    <p class="myborder marginauto">
+        margin 자동완성(auto)-p태그
+    </p>
+    <a  class="myborder marginauto">
+        margin 자동완성(auto)-a태그
+    </a>
+    <p>
+        display가 block이거나 inline 태그에 사용하면 margine auto는 실행되지 않는다 <br>
+        pauto
+    </p>
+    <div class="widthheight">
+        div 안
+        <p class="myborder marginauto">
+            margin auto-p태그
+        </p>
+        <a class="myborder marginauto">
+            margin auto-a태그
+        </a>
+    </div>
+    <h2>
+        html 태그의 전체 크기 구하기
+    </h2>
+    <p style="height:30px;padding:10px 0;">안녕하세요</p>
+    <p class="boxlayout">box-size : border-size인 경우</p>
+    <p>border-size의 경우 width 나 height의 값이 padding값+border값+컨텐츠 값 이다.
+        <br>크기값이 중요한 경우에는 border-size로 한다.
+    </p>
+    <p class="boxlayout2">box-size : context-size인 경우</p>
+    <p>context-size인 경우 width 나 height 값이 context값 그 자체가 된다.</p>
 </body>
 
 </html>

@@ -40,3 +40,12 @@ border-left:outset 10px red;
         border-bottom:none;border-bottom-width:5px;}
         .borderhidden{border:solid 3px blue;
         border-top:hidden;border-top-color:transparent;}
+.margintop{margin-top:40px;}
+.marginleft{margin-left:50px;}
+.marginbottom{margin-bottom:30px;}
+.marginright{margin-right:70px;}
+.marginparent{margin:inherit;}
+.marginauto{margin:auto;}
+.widthheight{width:500px;height:300px;}
+.boxlayout{box-sizing:border-box;height:30px;padding:2px;border:solid 1px black;}
+.boxlayout2{box-sizing:content-box;height:30px;padding:2px;border:solid 1px black;}
