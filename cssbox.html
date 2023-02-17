@@ -138,7 +138,6 @@
         margin-right
     </a>
     <a class="myborder"> margine-right확인용</a><br>
-
     <p class="myborder marginauto">
         margin 자동완성(auto)-p태그
     </p>
@@ -168,6 +167,25 @@
     </p>
     <p class="boxlayout2">box-size : context-size인 경우</p>
     <p>context-size인 경우 width 나 height 값이 context값 그 자체가 된다.</p>
+    <h2>
+        margin-auto:div안에 넣는 경우
+    </h2>
+    <div class="myborder marginauto" style="width:300px;">
+        margin 속성값 : auto
+        <p class="">
+            margin-auto:p태그
+        </p>
+        <a href="" class="">
+            margin-auto:a태그
+        </a>
+    </div>
+    <p>
+        margin:auto 속성값을 사용할 때 조건<br>
+        1. display가 block속성 <br>
+        2. content크기가 부모보다 작아야 한다 <br>
+        만약 작지 않을 시 마진이 들어갈 공간이 없다 <br>
+        margin:auto를 사용하면 부모의 크기 기준으로 중앙정렬한다
+    </p>
 </body>
 
 </html>

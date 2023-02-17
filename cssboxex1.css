@@ -1,0 +1,6 @@
+body{width:500px;}
+.head{text-align:center;background-color:orange;padding:15px 0;}
+.list{list-style:none;border-style:dashed;border-radius:20px;}
+.name{padding:5px 0 5px 5px;margin:15px 20px;background-color:whitesmoke;}
+.uppername{padding:0 0 0 5px;margin:30px 20px 0;background-color:whitesmoke;}
+.lowername{padding:0 0 0 5px;margin:0 20px 30px;background-color:whitesmoke;}
