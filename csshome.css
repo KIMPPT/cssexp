@@ -1,0 +1,26 @@
+.title{
+    text-decoration:underline dashed 3px blue;
+    color:red;
+}
+.content{
+    display:inline-block;
+    border-bottom:5px double purple;
+    border-right:7px dashed greenyellow;
+    text-decoration:underline solid 3px aqua;
+    color:green;
+    width:150px;
+    height:200px;
+}
+.image{
+    position:fixed;
+    right:5%;
+    bottom:5%;
+    width:10%;
+    height:10%;
+}
+.uppertext{
+    position:absolute;
+    right:10%;
+    top:5%;
+    color:blue;
+}
