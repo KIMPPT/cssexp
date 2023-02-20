@@ -52,7 +52,12 @@
     border-collapse:collapse;
     background-color:aqua;
 }
+/*자식태그로 할 경우 tdoay 추가*/
 .tablecolor>tbody>tr:nth-child(2n) td{
     background-color:red;
-    border:3px black solid;
 }
+/*만약 자손태그로 바로 한다면 tbody 생략가능*/
+.oftype p:first-of-type{
+    color:magenta;
+}
+/*클래스를 지정하고 자식으로 타입찾기 : first-child와 동일한 역할*/
