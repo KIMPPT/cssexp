@@ -23,7 +23,67 @@
     <h3>
         자손 선택자
     </h3>
-    
+    <div class="outbox">
+        <p>
+            div의 자식 태그인 p 태그
+        </p>
+        <div class="inbox">
+            <p>
+                div의 자손 태그인 p 태그 (div-div-p)
+            </p>
+        </div>
+        <p>
+            div outbox의 자식인 p 태그
+        </p>
+    </div>
+    <h3>
+        동위(형제) 선택자
+    </h3>
+    <div>
+        <p class="sibling">
+            p 형제를 선택합니다.
+        </p>
+        <p>
+            p의 p태그 형제
+        </p>
+        <a href="">
+            p의 a태그 형제
+        </a>
+        <p>
+            p의 p태그 형제
+        </p>
+        <p class="test">
+            p의 class 이름 test 의 형제
+        </p>
+    </div>
+    <div>
+        <p>
+            부모가 다르기 때문에 형제가 아니다
+        </p>
+    </div>
+    <p>
+        부모,자식,형제 관계를 통해서 태그에 접근 할 수 있다. <br>
+        이 때, 더 좁은 범위의 CSS가 최종적으로 적용된다. <br>
+        .test : 모든 test클래스를 가진 태그 <br>
+        .sibling~p : 모든 sibling클래스를 가진 태그들 중 p 태그만<br>
+        둘 중 아래의 범위가 더 좁다 
+    </p>
+    <h2>
+        의사 클래스(pseudo-class)
+    </h2>
+    <h3>
+        동적 의사 클래스
+    </h3>
+    <p>
+        :link, :visited, :hover, :active, :focus 와 같은 상태에 따른 CSS 디자인을 따로 넣어 줄 수 있다
+    </p>
+    <label for="">
+        아래 input 태그에 포커스를 주면 백그라운드 색이 바뀐다
+    </label>
+    <input type="text" class="inputfocus">
+    <p>
+        text 입력의 경우 hover는 커서를 가져다 대면 활성화 하고, focus는 입력칸에 커서를 클릭해야 활성화 된다.
+    </p>
 </body>
 
 </html>

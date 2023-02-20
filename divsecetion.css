@@ -1,0 +1,29 @@
+.outbox p{
+    background-color:green;
+    color:red;
+}
+.outbox>p{
+    background-color:yellow;
+    color:blue;
+}
+.sibling~p{
+    background-color:brown;
+    color:white;
+}
+/*+를 사용할 때는 바로 뒤에 있는 태그만 찾을 수 있다*/
+.sibling+a{
+    background-color:blueviolet;
+}
+/*a 태그는 sibling 클래스 바로 뒤에 시작하는게 아니라서 찾지 못한다.*/
+.sibling+p{
+    background-color:blueviolet;
+}
+.sibling~.test{
+    background-color:darkgoldenrod;
+}
+.inputfocus:hover{
+    background-color:aqua;
+}
+.inputfocus:focus{
+    background-color:green;
+}
