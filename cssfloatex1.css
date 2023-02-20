@@ -11,6 +11,9 @@
     border:3px solid green;
     margin-left:25%;
     background-color:greenyellow;
+    overflow:auto;
+    height:300px;
+    /*height를 지정한 곳에서는 scroll이 생긴다.*/
 }
 .footer{
     clear:both;
@@ -22,4 +25,12 @@ h1{
 }
 body{
     border:3px solid black;
+}
+.alignmargin{
+    width:150px;
+    margin:auto;
+}
+.alignposition{
+    position:absolute;
+    left:50%;
 }

@@ -1,0 +1,19 @@
+.goto{
+    position:fixed;
+    border:3px black solid;
+    background-color: burlywood;
+    width:130px;
+    padding:5px 20px 10px 5px;
+    right:0%;
+    top:0%;
+}
+.gototop, .gotobottom{
+    text-decoration-line:none;
+    padding:0 0 0 10px;
+}
+.gototop:visited,.gotobottom:visited{
+    color:black;
+}
+.gototop:hover, .gotobottom:hover{
+    color:white;
+}
