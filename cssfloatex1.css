@@ -5,13 +5,17 @@
     border:3px solid blue;
     float:left;
     width:25%;
+    background-color:aqua
 }
 .section{
     border:3px solid green;
     margin-left:25%;
+    background-color:greenyellow;
 }
 .footer{
+    clear:both;
     border:3px solid purple;
+
 }
 h1{
     text-align:center;
