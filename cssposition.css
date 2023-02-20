@@ -1,0 +1,14 @@
+.fixedposition{
+    position:fixed;
+    background-color:green;
+    z-index:10;
+    width:150px;
+    height:100px;
+}
+.absoluteposition{
+    position:absolute;
+    background-color:yellow;
+    z-index:11;
+    width:100px;
+    height:150px;
+}
