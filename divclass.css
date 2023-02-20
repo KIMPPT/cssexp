@@ -4,9 +4,19 @@ ul{
 .content{
     border:3px solid red;
 }
-.sharp ul{
-    display:inline;
-    position:absolute;
-    right:0;
-    padding-left:30px;
+.sharp>ul{
+    overflow:auto; padding:20px;
+    float:right;
+    list-style:none;
+}
+.sharp>ul>li{
+    float:left;
+    padding:5px 20px;
+    margin-left:20px;
+    background-color:blue;
+    border-radius:20px;
+    color:white;
+}
+a{
+    text-decoration-line:none;
 }
