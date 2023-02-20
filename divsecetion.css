@@ -27,3 +27,32 @@
 .inputfocus:focus{
     background-color:green;
 }
+.inputfocus:focus+p{
+    color:brown;
+}
+.checkboxclass>input:checked+span{
+    color:gray;
+}
+.checkboxclass>input:disabled+span{
+    text-decoration : line-through 3px solid black;
+}
+.menulist>li:first-child{
+    background-color:cornflowerblue
+}
+.menulist>li:last-child{
+    background-color:rosybrown
+}
+.menulist>li:nth-child(3n){
+    background-color:coral
+}
+.menulist>li:nth-last-child(3){
+    background-color:darkviolet
+}
+.tablecolor{
+    border-collapse:collapse;
+    background-color:aqua;
+}
+.tablecolor>tbody>tr:nth-child(2n) td{
+    background-color:red;
+    border:3px black solid;
+}
