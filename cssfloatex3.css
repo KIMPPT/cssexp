@@ -1,0 +1,20 @@
+/*ul 태그 중 class 명이 list인 범위 속성*/
+ul.list{
+    overflow:auto; padding: 20px;
+    float:left;
+    list-style:none;
+    background-color:yellow;
+}
+/*ul 태그 중 class 명이 list인 곳 중에 li 태그를 쓰는 곳*/
+ul.list li{
+    float:left;
+    padding:5px 10px;
+    background-color:green;
+}
+.leftfloat{
+    float:left;
+}
+.container{
+    background-color:blue;
+    overflow:auto;
+}

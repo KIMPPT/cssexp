@@ -3,17 +3,15 @@
     border:3px black solid;
     background-color: burlywood;
     width:130px;
-    padding:5px 20px 10px 5px;
-    right:0%;
-    top:0%;
+    padding:0 20px 10px 10px;
+    right:0;
+    top:0;
 }
-.gototop, .gotobottom{
+.goto a{
     text-decoration-line:none;
     padding:0 0 0 10px;
-}
-.gototop:visited,.gotobottom:visited{
     color:black;
 }
-.gototop:hover, .gotobottom:hover{
+.goto a:hover{
     color:white;
 }
