@@ -8,7 +8,14 @@
 }
 .section{
     border:3px solid green;
+    margin-left:25%;
 }
 .footer{
     border:3px solid purple;
+}
+h1{
+    text-align:center;
+}
+body{
+    border:3px solid black;
 }
