@@ -76,3 +76,32 @@ body{
     -webkit-background-clip: text;
     color:transparent;
 }
+.borderimage{
+    border-style:solid;
+    border-image:url(./image/border.png) 30/19px ;
+    width:300px;
+    height:200px;
+}
+.textline{
+    background-color:blue;
+    height:50px;
+    /*각 컨텐츠의 값이 넘쳤을 때 어떻게 보일지 처리*/
+    overflow:hidden;
+    /*글자가 자동 줄 바꿈이 있는지 확인*/
+    white-space : nowrap;
+    /*글자가 그 크기를 넘어갔을 때 모습 정함*/
+    text-overflow:ellipsis;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+.textkr{
+    background-color:yellowgreen;
+    width:320px;
+    height:150px;
+    /*
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    */
+    word-break:keep-all;
+}
