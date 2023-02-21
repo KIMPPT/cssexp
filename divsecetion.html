@@ -66,7 +66,7 @@
         이 때, 더 좁은 범위의 CSS가 최종적으로 적용된다. <br>
         .test : 모든 test클래스를 가진 태그 <br>
         .sibling~p : 모든 sibling클래스를 가진 태그들 중 p 태그만<br>
-        둘 중 아래의 범위가 더 좁다 
+        둘 중 아래의 범위가 더 좁다
     </p>
     <h2>
         의사 클래스(pseudo-class)
@@ -90,10 +90,10 @@
     <h3>
         상태 의사 클래스
     </h3>
-    <div class="checkboxclass" >
-        <input type="checkbox"checked>
+    <div class="checkboxclass">
+        <input type="checkbox" checked>
         <span>위 내용을 숙지하셨습니까?-체크박스 클릭 시 회색으로 변함</span> <br>
-        <input type="checkbox" name="" id="" >
+        <input type="checkbox" name="" id="">
         <span>한번 더 확인해주세요</span>
     </div>
     <div class="checkboxclass">
@@ -121,37 +121,37 @@
         짝수번째 테이블이 노란색으로 바꾸세요
     </p>
     <table class="tablecolor">
-            <tr>
-                <td>
-                    첫번째
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    두번째
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    세번째
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    네번째
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    다섯번째
-                </td>
-            </tr>
+        <tr>
+            <td>
+                첫번째
+            </td>
+        </tr>
+        <tr>
+            <td>
+                두번째
+            </td>
+        </tr>
+        <tr>
+            <td>
+                세번째
+            </td>
+        </tr>
+        <tr>
+            <td>
+                네번째
+            </td>
+        </tr>
+        <tr>
+            <td>
+                다섯번째
+            </td>
+        </tr>
     </table>
     <h3>child가 아닌 of-type인 경우</h3>
     <p>속성 중에서 순서를 찾아서 작성</p>
-<div class="oftype">
-    <p>
-        각 부모의 최초의 요소에 디자인이 들어간다
+    <div class="oftype">
+        <p>
+            각 부모의 최초의 요소에 디자인이 들어간다
         <p>
             그러나 두번째 요소에는 들어가지 않는다.
         </p>
@@ -160,33 +160,50 @@
                 최초의 요소
             </p>
         </div>
-    </p>
-    <h1>
-        div의 자식
-    </h1>
+        </p>
+        <h1>
+            div의 자식
+        </h1>
+        <h2>
+            div의 자식
+        </h2>
+        <p>
+            div의 자식
+        </p>
+        <h1>
+            div의 자식
+        </h1>
+        <h2>
+            div의 자식
+        </h2>
+        <p>
+            div의 자식
+        </p>
+        <h1>
+            div의 자식
+        </h1>
+        <h2>
+            div의 자식
+        </h2>
+
+    </div>
     <h2>
-        div의 자식
+        html요소에 특젇부분에 추가하는 선택자
     </h2>
-    <p>
-        div의 자식
+    <p class="firstletter">텍스트의 첫글자를 디자인합니다</p>
+    <p class="firstline">
+        텍스트의 첫 줄을 디자인합니다 <br>
+        br로 다음줄로 넘어간 텍스트는 디자인되지 않습니다
     </p>
-    <h1>
-        div의 자식
-    </h1>
     <h2>
-        div의 자식
+        before와 after : 요소 앞과 뒤에 새로운 요소 추가하는 선택자
     </h2>
-    <p>
-        div의 자식
+    <p class="before">
+        p 태그 앞에 내용이 들어갑니다
     </p>
-    <h1>
-        div의 자식
-    </h1>
-    <h2>
-        div의 자식
-    </h2>
-    
-</div>
+    <p class="after">
+        p 태그 뒤에 내용이 들어갑니다
+    </p>
 </body>
 
 </html>

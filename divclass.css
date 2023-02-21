@@ -1,24 +1,40 @@
 ul{
     list-style-type:none;
 }
+a{
+    text-decoration-line:none;
+    color:black;
+}
 .content{
     border:3px solid red;
 }
-.sharp>ul{
+/*li 태그가 block 속성일 때 float로 정렬*/
+.sharp{
     overflow:auto; padding:20px;
     float:right;
     list-style:none;
+    visibility:hidden;
 }
-.sharp>ul>li{
+.sharp>li{
     float:left;
-    padding:5px 20px;
+    padding:5px 10px;
     margin-left:20px;
     background-color:blue;
-    border-radius:20px;
-}
-.sharp a{
+    border-radius:25px;
     color:white;
 }
-a{
-    text-decoration-line:none;
+/*li 태그가 아닌 span 태그 시 position으로 배치*/
+.sharp2{
+    clear:both;
+    position:absolute;
+    right:0;
+    padding:20px;
+}
+.sharp2>span{
+    float:left;
+    padding:5px 10px;
+    margin-left:20px;
+    background-color:blue;
+    border-radius:25px;
+    color:white;
 }

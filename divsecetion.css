@@ -61,3 +61,21 @@
     color:magenta;
 }
 /*클래스를 지정하고 자식으로 타입찾기 : first-child와 동일한 역할*/
+.firstletter::first-letter{
+    font-size:30px;
+    color:blue;
+}
+.firstline::first-line{
+    font-size:25px;
+    color:brown;
+}
+.before::before{
+    content: url(./image/sparrow.jpg);
+    display:inline-block;
+}
+.after::after{
+    content:"";
+    background-color:burlywood;
+    display:inline-block;
+    width:5px;height:15px;
+}
