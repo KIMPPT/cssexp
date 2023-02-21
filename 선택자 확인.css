@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*해더*/
+.header{
+    text-align:center;
+    background-color:aqua;
+    padding:50px 0;
+}
+/*네이게이션바*/
+.nav{
+    overflow:auto;
+    background-color:#00a0ff;
+    padding-bottom:10px;
+}
+.nav>ul{
+    list-style:none;
+}
+.nav li{
+    float:left;
+    border-right: solid 3px black;
+    padding: 0 5px;
+}
+.nav li:last-child{
+    border:none;
+}
+.main{
+background-color:aquamarine;
+padding-left:10px;
+margin:auto;
+display:inline-block;
+width:800px;
+min-height:500px;
+/*최솟값을 지정해주면 컨텐츠의 내용이 없을 때 크기*/
+/*hight의 크기는 기본적으로 Auto 이므로 컨텐츠의 내용이 많으면
+  자동으로 늘어난다.*/
+position:relative;
+left:25%;
+}
+.footer{
+position:relative;
+bottom:0;
+background-color:rgb(35, 107, 107);
+padding-bottom:50px;
+}
