@@ -1,4 +1,34 @@
 .flexbox{
+    height:400px;
     display:flex;
     justify-content:space-around;
+    flex-direction:row;
+}
+.flexboxheight{
+    display:flex;
+    height:150px;
+    background-color:aqua;
+    justify-content:space-between;
+    align-items:center;
+}
+.flexboxheight>p{
+    background-color:brown;
+    width:75px;
+    padding:5px;
+}
+.flexboxwrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.flexboxwrap>p{
+    width:75px;
+}
+.flexboxheightwrap{
+    display:flex;
+    height:100px;
+    background-color:burlywood;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:center;
 }
