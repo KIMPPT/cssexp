@@ -1,0 +1,13 @@
+.column{
+    height:500px;
+    column-count:3;
+    background-color:aqua;
+    column-rule:black 3px solid;
+    column-gap: 50px;
+    padding:15px;
+    column-fill:balance;
+}
+.spanall{
+    column-span:all;
+    background-color:brown;
+}
