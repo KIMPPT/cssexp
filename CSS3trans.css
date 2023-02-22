@@ -125,3 +125,59 @@ input[type="checkbox"]:checked+span{
     opacity:1;
     transition:all 2s;
 }
+.animation{
+    animation-name:moving;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes moving{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(50px,0);}
+    /*100%{transform:translate(0,0);}*/
+}
+.radiusanimation{
+    animation-name:radiuscircle;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+@keyframes radiuscircle{
+0%{border-radius:0;
+}
+20%{border-top-left-radius:50%;
+    border-bottom-left-radius:0%;
+    border-bottom-right-radius:0%;
+    border-top-right-radius:0%;
+    transform:rotate(90deg);
+    background-color:yellowgreen;}
+40%{transform:rotate(180deg);
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:0%;
+    border-top-right-radius:0%;
+background-color:purple;}
+60%{transform:rotate(270deg);
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    border-top-right-radius:0%;
+background-color:aqua;}
+80%{transform:rotate(360deg);
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    border-top-right-radius:50%;
+background-color:yellowgreen;}
+100%{transform:rotate(0deg);
+border:0;}
+}
+.animationtext{
+    position:absolute;
+    box-sizing:border-box;
+padding-top:230px;
+    width:500px;
+    height:500px;
+    text-align:center;
+    font-size:2rem;
+    z-index:10;
+}
