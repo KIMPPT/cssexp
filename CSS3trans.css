@@ -1,5 +1,4 @@
 .mybox{
-    color:blueviolet;
     width:500px;
     height:500px;
     background-color:rgba(0,0,0,0.5)
@@ -22,6 +21,9 @@
     transform:rotateX(60deg) rotatey(30deg) translate3D(0,0,-20px);
 }
 
-.mybox.transition:hover{
+.transition:hover{
+    background-color:red;
+    color:violet;
+    transition: color 20s;
     transition: background-color 10s;
 }
