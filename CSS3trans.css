@@ -1,0 +1,27 @@
+.mybox{
+    color:blueviolet;
+    width:500px;
+    height:500px;
+    background-color:rgba(0,0,0,0.5)
+}
+.translate{
+    background-color:yellow;
+    transform:translate(10px 15px);
+}
+.rotate{
+    color:white;
+    background-color:blue;
+    transform:rotate(70deg);
+}
+.scale{
+    background-color:rosybrown;
+    transform:scale(0.3,3);
+}
+.rotate3D{
+    background-color:aqua;
+    transform:rotateX(60deg) rotatey(30deg) translate3D(0,0,-20px);
+}
+
+.mybox.transition:hover{
+    transition: background-color 10s;
+}

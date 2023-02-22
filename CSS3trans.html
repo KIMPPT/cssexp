@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS3trans.css">
+</head>
+<body>
+    <h1>CSS3 변형</h1>
+    <h2>2D Transform-2차원변형</h2>
+    <p>
+        요소를 이동하거나 회전할 수 있습니다 <br>
+        양식 : transform: 해당요소;
+    </p>
+    <div class="mybox">
+        아무것도 적용되지 않은 박스
+        <p class="translate">
+            transalte(x축값 y축값);
+            <br>
+            x,y축을 이동합니다
+        </p>
+        <p class="rotate">
+            rotate(회전각deg);
+            <br>
+            각도를 회전시킵니다
+        </p>
+        <p class="scale">
+            scale(x값, y값);
+            <br>
+            확대,축소 합니다
+        </p>
+        <p class="skew">
+            skewX(기울기각deg); or skewY(기울기각deg); <br>
+            기울입니다
+        </p>
+        <p class="rotate3D">
+            3D(3차원)으로 이    동 및 회전합니다
+        </p>
+    </div>
+    <h2>전환-Transition</h2>
+    <div class="mybox transition">
+        전환을 합니다 <br>
+        글자는 5초 뒤에, 배경은 커서를 가져다 대면 10초 후에
+    </div>
+    전환을 사용할 때는 전환이 되기 전 디자인과 전환이 된 후의 디자인 2개가 필요하다 <br>
+    전환이 되기 위한 조건(hover,check 등)이 맞으면 전환된다
+</body>
+</html>
