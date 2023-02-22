@@ -27,3 +27,101 @@
     transition: color 20s;
     transition: background-color 10s;
 }
+.transition{
+    transition:background-color 10s;
+}
+.transall:hover{
+    transform:translate(100px,50px) rotate(90deg);
+    width:300px;
+    transition : transform 2s, width 2s;
+}
+.transall{
+    transition : transform 2s, width 2s;
+}
+.lineartime:hover{
+    transform:translate(100px,50px) rotate(90deg);
+    transition : transform 3s, width 3s;
+    transition-timing-function:ease-out;
+}
+input[type="checkbox"]:checked+span{
+    color:blue;
+    transition:color 3s;
+}
+.aftertrans>p::after{
+    content:"커서를 가져다 대지 않으면 안보입니다";
+    color:white;
+    background-color:black;
+    position:absolute;
+    width:100%;
+    left:0;
+    opacity:0%;
+    transition:opacity 3s;
+}
+.aftertrans>p:hover:after{
+    opacity:100%;
+    transition:opacity 3s;
+}
+.container{
+    width:300px;
+    height:300px;
+    background-color:rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+.container>.imgup{
+    background-image:url(./image/sparrow.jpg);
+    width:300px;
+    height:300px;
+    background-size:cover;
+    background-origin:content-box;
+    background-position:center;
+    transition:all 1s;
+}
+.container>.imgup:hover{
+    opacity:0.5;
+    transform:scale(1.2);
+    transition:all 1s;
+}
+.container2{
+    display:inline-block;
+    margin:3px;
+    width:300px;
+    height:300px;
+    background-color:black;
+    overflow:hidden;
+}
+.container2>.imgup{
+    background-image:url(./image/sparrow.jpg);
+    width:300px;
+    height:300px;
+    background-size:cover;
+    background-origin:content-box;
+    background-position:center;
+    transition:all 1s;
+}
+.container2>.imgup:hover{
+    opacity:0.5;
+    transform:scale(1.2);
+    transition:all 1s;
+}
+.img2{
+    width:300px;
+    height:300px;
+    background-image:url(./image/sparrow.jpg);
+    background-size: cover;
+}
+.black{
+    color:white;
+    text-align:center;
+    box-sizing:border-box;
+    position:absolute;
+    width:300px;
+    height:300px;
+    padding-top:130px;
+    background-color:black;
+    opacity:0.5;
+    transition:all 2s;
+}
+.black:hover{
+    opacity:1;
+    transition:all 2s;
+}

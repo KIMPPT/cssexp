@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS3trans.css">
 </head>
+
 <body>
     <h1>CSS3 변형</h1>
     <h2>2D Transform-2차원변형</h2>
@@ -36,7 +38,7 @@
             기울입니다
         </p>
         <p class="rotate3D">
-            3D(3차원)으로 이    동 및 회전합니다
+            3D(3차원)으로 이 동 및 회전합니다
         </p>
     </div>
     <h2>전환-Transition</h2>
@@ -45,6 +47,66 @@
         글자는 5초 뒤에, 배경은 커서를 가져다 대면 10초 후에
     </div>
     전환을 사용할 때는 전환이 되기 전 디자인과 전환이 된 후의 디자인 2개가 필요하다 <br>
-    전환이 되기 위한 조건(hover,check 등)이 맞으면 전환된다
+    전환이 되기 위한 조건(hover,check 등)이 맞으면 전환된다 <br>
+    차후에는 JS를 이용해서도 줄 수 있습니다
+    <hr>
+    <div class="mybox transall">
+        변형과 전환을 둘 다 합니다
+    </div>
+    <p>
+        전환을 할 때, 여러 속성명으로 전환 할 수 있다 <br>
+        전환을 추가 할 때, 시간 뒤에 ,(쉼표)를 붙여 속성명 시간 양식을 똑같이 쓰면 된다<br>
+        만약 전환 속성들이 모두 같은 시간일 경우 all을 쓰면 된다
+    </p>
+    <div class="mybox lineartime">
+        전환속도가 일정합니다
+    </div>
+    <hr>
+    <h1>전환효과 연습</h1>
+    <p>아래 태그들에게 전환효과를 넣으세요</p>
+    <div>
+        <input type="checkbox" name="" id="">
+        <span>체크가 되면 글자색이 파랗게 전환</span>
+    </div>
+    <div class="aftertrans">
+        <p>
+            after를 이용해서 마우스를 올리면
+            배경색이 검정으로 바뀌고 다른 글자가 나오게 진행
+        </p>
+    </div>
+    <p>
+        전환효과를 주기 전에 해당 태그에 전환했을 때 디자인이 들어가 있는지를 확인한 후 전환효과를 주면 빠지는 내용 없이 확인하기 쉽다 <br>
+        선택자 after의 경우 새로운 내용을 추가하는 선택자<br>
+        ::after의 값과 :hover:after의 값을 주어야 전환
+    </p>
+    <h2>이미지에 마우스를 올렸을 때 이미지 확대</h2>
+    <div class="container">
+        <div class="imgup">
+
+        </div>
+    </div>
+    <h2>
+        마우스를 올렸을 때 확대되는 이미지 만들기
+    </h2>
+    <p>
+        2개의 div가 같은 라인에서 나오도록
+    </p>
+    <div class="container2">
+        <div class="imgup">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="imgup">
+        </div>
+    </div>
+    <div class="container">
+        <div class="black">
+            새 이미지 입니다.
+        </div>
+        <div class="img2">
+
+        </div>
+    </div>
 </body>
+
 </html>
