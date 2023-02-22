@@ -168,7 +168,7 @@ background-color:aqua;}
     border-bottom-right-radius:50%;
     border-top-right-radius:50%;
 background-color:yellowgreen;}
-100%{transform:rotate(0deg);
+100%{transform:rotate(360deg);
 border:0;}
 }
 .animationtext{
@@ -180,4 +180,69 @@ padding-top:230px;
     text-align:center;
     font-size:2rem;
     z-index:10;
+}
+.imagefillter{
+    width:300px;
+    height:300px;
+}
+.imagefillter:hover{
+    filter:blur(3px) brightness(0.9);
+}
+.imagelist>.imagecontent{
+    display:inline-block;
+    width:150px;
+    height:150px;
+    background-size:cover;
+}
+.imagelist>.imagecontent:nth-child(1)
+{
+    background-image:url(./image/sparrow.jpg);
+}
+.imagelist>.imagecontent:nth-child(1):hover
+{
+    background-image:url(./image/sparrow.jpg);
+    filter:invert();
+}
+
+.imagelist>.imagecontent:nth-child(2)
+{
+    background-image:url(./image/birds.jpg);
+}
+.imagelist>.imagecontent:nth-child(2):hover
+{
+    background-image:url(./image/birds.jpg);
+    filter:contrast(90%);
+}
+.imagelist>.imagecontent:nth-child(3){
+    background-image:url(./image/cat.jpg);
+}
+.imagelist>.imagecontent:nth-child(3):hover{
+    background-image:url(./image/cat.jpg);
+    filter:sepia(200%);
+}
+.pencil{
+    width:50px;
+    height:50px;
+    animation-name:pencilwave;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes pencilwave{
+    0%{}
+    25%{ transform:rotate(120deg);}
+    50%{ transform:rotate(240deg);}
+    75%{ transform:rotate(360deg);}
+    100%{ transform:rotate(360deg);}
+
+}
+.mixblend{
+    position:fixed;
+    top:0;
+    color:white;
+    mix-blend-mode: difference;
+    background-color:blue;
+}
+body{
+    background-color:white;
 }
