@@ -1,8 +1,58 @@
 .gridbox
 {display:grid;
-    background-color:aqua;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+.gridbox{
+    column-gap: 20px;
+}
+.gridbox>p:first-child{
+    background-color:aquamarine;
 }
 .gridbox>p{
     border:1px solid black;
+    background-color: blueviolet;
+    color:white;
+}
+/*row를 쓸 때는 높이간격을 따로 주고 싶을 때*/
+.gridbox2
+{display:grid;
+    grid-template-rows: 1fr 3fr 2fr 4fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    background-color:beige;
+}
+.gridbox2>p{
+    border:1px solid black;
+}
+.gridbox2>p:first-child{
+    padding:20px 0;
+}
+.gridboxsum{
+    display:grid;
+    grid-template-columns: repeat(3,150px);
+    /*template : 갯수만큼 크기 지정
+    auto : 모든 값을 오토로 지정*/
+    grid-auto-rows:1fr;
+}
+.gridboxsum>p{
+    background-color:blue;
+    color:white;
+    border:3px solid brown;
+    text-align: center;
+}
+.gridboxsum>p:nth-child(1){
+    grid-column:2/4;
+}
+.gridboxsum>p:nth-child(2){
+    grid-row:2/4;
+}
+.gridboxsum>p:nth-child(3){
+    grid-row:2/4;
+    grid-column:2/4;
+}
+.gridboxsum>p:nth-child(4){
+    grid-column:2/4;
+}
+.gridboxsum>p:nth-child(5){
+    grid-row:1;
+    grid-column:1;
 }
