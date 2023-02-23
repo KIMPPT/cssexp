@@ -1,0 +1,28 @@
+.gridex .itemimage{
+    background-image:url(/image/cat.jpg);
+    width:150px;
+    height:200px;background-size:cover;}
+.gridex{
+    display:grid;
+    grid-template-columns:repeat(3,150px);
+}
+.gridex>.content{ 
+    margin:5px;   
+    overflow:hidden;
+}
+.gridex>.content>.itemimage{
+    margin:0;
+    padding:0;
+}
+.gridex>.content:hover .itemimage{
+    transform:scale(1.1);
+    filter:brightness(50%);
+    transition:all 0.5s;
+}
+.gridex>.content:hover h4,.gridex>.content:hover p{
+    text-decoration-line:underline;
+}
+.gridex>.content>h4, p{
+    text-align:center;
+    margin:5px;
+}
