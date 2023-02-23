@@ -32,3 +32,47 @@
     justify-content:space-around;
     align-content:center;
 }
+.flexitem{
+    display:flex;
+    height:150px;
+    background-color:antiquewhite;
+    justify-content:space-between;
+}
+.flexitem>p:nth-child(3n){
+    align-self:center;
+}
+.flexitem>p:nth-child(2){
+    align-self:flex-end;
+}
+.flexitem>p:nth-child(3){
+    align-self:flex-start;
+}
+.flexlayout{
+    display:flex;
+    justify-content:space-between;
+}
+/*실습코드*/
+.logo img{
+    width:100px;
+    height:100px;
+    
+}
+/*각각의 요소들의 크기가 다르므로 움직일 수 있는 높이가 있음*/
+.flexmenu>ul{
+    padding:10px;
+    list-style:none;
+    display:flex;
+    min-width:600px;
+    justify-content:space-evenly;
+}
+/*플렉스 컨테이너에서 아이템은 content크기만 가지기에 너비 지정*/
+.flexmenu li{
+    padding:0 20px;
+    background-color:aqua;
+}
+.flexmenu{
+    align-self:center;
+}
+.lang{
+    align-self:center;
+}

@@ -1,0 +1,8 @@
+.gridbox
+{display:grid;
+    background-color:aqua;
+    grid-template-columns: repeat(2,1fr);
+}
+.gridbox>p{
+    border:1px solid black;
+}
