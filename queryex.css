@@ -1,88 +1,86 @@
 /*PC사이즈로 먼저 작성*/
 body{
-    background-color:green;
     margin:0;
     padding:0;
 }
-.header, .contain, .contain>*{
-    margin:5px;
+/*PC링크*/
+.navlink{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
 }
 .header{
     text-align:center;
     background-color: blueviolet;
     padding: 10px 0;
-    width:100vw;
-    
 }
 .contain{
     display:grid;
     justify-content:space-evenly;
-    grid-template-columns:repeat(3,1fr);
-    width:100vw;
-    height:500px;
+    grid-template-columns:1fr 3fr 1fr;
+    grid-auto-rows : minmax(150px,auto);
     background-color:aqua;
+    margin-top:5px;
 }
 .nav{
 background-color:red;
-width:100%;
+margin:0 5px;
 color:white;
 }
 .main{
 background-color:blue;
+margin:0 5px;
 color:white;
 }
 .aside{
     width:100%;
 background-color:yellow;
+margin:0 5px;
 }
 /*태블릿 사이즈 작성*/
 @media screen and (min-width:768px) and (max-width:1023px){
     .contain{
-        display:grid;
-        justify-content:space-evenly;
-        grid-template-columns:repeat(2,1fr);
-        width:100vw;
-        height:500px;
+        grid-template-columns:3fr 1fr;
         background-color:aqua;
     }
     .nav{
-    background-color:red;
-    width:100%;
+        margin:0;
+        margin:0 0 5px 5px;
     }
     .main{
-    background-color:blue;
     grid-row:1/3;
+    margin:0;
+    margin-right:5px;
     }
     .aside{
-        width:100%;
-    background-color:yellow;
+        margin:0;
+        margin:5px 0 0 5px;
     }
 }
 /*모바일 사이즈 작성*/
 @media screen and (max-width:767px) {
     .contain{
-        display:grid;
-        justify-content:space-evenly;
         grid-template-columns:1fr;
+        grid-template-rows:8fr 1fr 1fr;
         width:100vw;
         height:500px;
         background-color:aqua;
     }
     .nav{
-    background-color:red;
-    width:100%;
-    height:12vh;
+        margin:0;
+        margin-bottom:5px;
     grid-row:2;
     }
     .main{
-    background-color:blue;
-    height:25vh;
-    grid-row:1;
+        margin:0;
+        margin-bottom:5px;
     }
     .aside{
-        width:100%;
-    background-color:yellow;
-    height:10vh;
+        margin:0;
+        margin-bottom:5px;
     grid-row:3;
     }
+}
+.navlink{
+    flex-direction:row;
 }

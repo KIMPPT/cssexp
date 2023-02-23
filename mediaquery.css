@@ -5,11 +5,15 @@ body{background-color: darkgoldenrod;}
 }
 @media screen and (max-width:480px){
     body{background-color: orange};
-    .gridboxmedia{grid-template-columns:1fr;}
+    .gridboxmedia{
+        grid-template-columns:1fr;
+    }
 }
 @media screen and (min-width:481px) and (max-width:768px){
     body{background-color:yellowgreen;}
-    .gridboxmedia{grid-template-columns:repeat(2,1fr);}
+    .gridboxmedia{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 .gridboxmedia>.content{
