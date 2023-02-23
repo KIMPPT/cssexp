@@ -1,0 +1,22 @@
+body{background-color: darkgoldenrod;}
+.gridboxmedia{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+@media screen and (max-width:480px){
+    body{background-color: orange};
+    .gridboxmedia{grid-template-columns:1fr;}
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    body{background-color:yellowgreen;}
+    .gridboxmedia{grid-template-columns:repeat(2,1fr);}
+}
+
+.gridboxmedia>.content{
+    display:inline-block;
+    /*콘텐츠 값이 없으므로 높이값만 지정*/
+    width:90%;
+    height:150px;
+    background-color:whitesmoke;
+}
+/*미디어 쿼리 작성 시 PC보다 작은 디자인을 넣어 줄 때*/
