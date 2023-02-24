@@ -1,0 +1,45 @@
+body{
+    padding:0;
+    margin:0;
+}
+.box{
+    width:1000px;
+    margin:auto;
+    background-color: skyblue;
+    font-size:1.5rem;
+    text-align:center;
+    color:white;
+}
+.header{
+    height:50px;
+    background-color: blue;
+}
+.nav{
+    height:50px;
+    background-color: #1010d0;
+}
+.main{
+    overflow:auto;
+}
+.leftside{
+    width:250px;
+    height:300px;
+    float:left;
+    background-color: #4040a0;
+}
+.section{
+    width:500px;
+    float:left;
+    background-color: #606080;
+    height:300px;
+}
+.rightside{
+    width:250px;
+    float:left;
+    background-color: #808060;
+    height:300px;
+}
+.footer{
+    background-color: #a0a040;
+    height:50px;
+}
