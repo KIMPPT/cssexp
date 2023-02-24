@@ -1,0 +1,40 @@
+body,ul{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none; color:black;
+}
+.box
+{background-color: aqua;}
+.nav>.gnb{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:bisque;
+}
+.nav>.gnb>li:hover .subnb{
+    display:block;
+    visibility:visible;
+    opacity:1;
+    transition:all 1s;
+}
+.nav>.gnb .subnb{
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    margin-left:-20px;
+    background-color: burlywood;
+    padding:10px 5px;
+}
+/*하위메뉴에 마우스 커서를 올렸을 때 전환효과*/
+.nav>.gnb>li>.subnb>li{
+    box-sizing:border-box;
+    height:25px;
+}
+.nav>.gnb>li>.subnb>li:hover{
+    border-bottom:2px solid black;
+    transition:all 0.1s;
+}

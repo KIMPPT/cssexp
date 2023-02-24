@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위 네비게이션</title>
+    <link rel="stylesheet" href="./undernav.css">
+</head>
+<body>
+    <div class="box">
+        <header class="header">
+            <h1>
+                하위 네비게이션 바
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <!--첫번째 ul 상위메뉴-->
+                    <li>
+                        <a href="">
+                            메뉴1
+                        </a>
+                        <!--각 li에 하위메뉴 작성-->
+                        <ul class="subnb">
+                            <li>하위메뉴1</li>
+                            <li>하위메뉴2</li>
+                            <li>하위메뉴3</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            메뉴2
+                        </a>
+                        <!--메뉴2의 하위메뉴-->
+                        <ul class="subnb">
+                            <li>하위메뉴1</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            메뉴3
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main">
+                <section class="contend1">content1</section>
+            </main>
+        </header>
+    </div>
+</body>
+</html>

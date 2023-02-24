@@ -5,10 +5,10 @@ body{
 .header{
     background-color: aqua;
     padding:10px 0;
+    /*고정네비게이션 바 사용*/
     position:fixed;
     width:100%;
 }
-/*고정 네비게이션 바를 사용할 때는 컨텐츠가 보여질 공간을 확보*/
 .header>.nav>ul{
     display:flex;
     list-style:none;
@@ -19,6 +19,7 @@ body{
     /*브라우저 높이비율에 따라서 보이고 싶을 때 사용*/
     height:100vh;
     background-color: blueviolet;
+    /*고정 네비게이션 바를 사용할 때는 컨텐츠가 보여질 공간을 확보*/
     padding-top: 150px;
 }
 .main>.content2{
