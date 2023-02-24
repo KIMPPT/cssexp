@@ -17,6 +17,8 @@ body{
     height:100px;
     background-color: rgb(28, 122, 122);
 }
+/*float와 margin 사용
+ 하나의 크기가 고정되고 나머지가 유동적일 때 사용*/
 .boxfloat>.side{
     float:left;
     width:300px;
@@ -28,6 +30,37 @@ body{
     background-color: blueviolet;
 }
 .boxfloat .footer{
+    height:100px;
+    background-color: rgb(98, 30, 161);
+}
+/*float사용방법 2번째*/
+.boxfloat2{
+    background-color: blue;
+    color:white;
+    margin:auto;
+    width:1000px;
+    overflow:auto;
+}
+.boxfloat2>.main{
+    float:left;
+    width:700px;
+}
+/*두개의 내용에 각각 float를 사용해 크기를 고정*/
+.boxfloat2 .header{
+    height:100px;
+    background-color: rgb(28, 122, 122);
+}
+.boxfloat2>.side{
+    float:left;
+    width:300px;
+    height:500px;
+    background-color: rgb(71, 148, 122);
+}
+.boxfloat2 .content{
+    height:300px;
+    background-color: blueviolet;
+}
+.boxfloat2 .footer{
     height:100px;
     background-color: rgb(98, 30, 161);
 }
