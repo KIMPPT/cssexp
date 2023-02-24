@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    padding:0;
+}
+.wrap{
+width:1000px;
+background-color: green;
+margin:auto;
+font-size:2rem;
+text-align:center;
+}
+/*header*/
+.header{
+width:1000px;
+height:150px;
+background-color: aqua;
+font-size:3rem;
+/*텍스트 줄간격 조절해서 글자 위치 수정*/
+line-height:150px;
+}
+/*nav*/
+.nav{
+height:100px;
+/*태그를 넣어서 정렬할 때-padding 사용*/
+padding:20px 0; 
+/*안에 들어간 태그들이 flex를 사용하면 필요없다*/
+box-sizing:border-box;
+background-color: bisque;
+}
+/*main-float일 때*/
+.mainfloat{
+    overflow:auto;
+}
+/*a-side*/
+.mainfloat>.a-side{
+    float:left;
+    width:300px;
+    height:500px;
+    background-color: burlywood;
+}
+/*section*/
+.mainfloat>.section{
+margin-left:300px;
+background-color: cornflowerblue;
+height:500px;
+}
+/*main-grid일 때*/
+.maingrid{
+    /*float를 사용했다면 clear를 통해 속성 제거*/
+    clear:both;
+    display:grid;
+    grid-template-columns:300px 700px;
+    height:500px;
+}
+/*a-side*/
+.maingrid>.a-side{
+    background-color: cyan;
+}
+/*section*/
+.maingrid>.section{
+    background-color: darkgrey;
+}
+/*footer*/
+.footer{
+    height:80px;
+}
