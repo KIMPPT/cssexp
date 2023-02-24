@@ -13,33 +13,51 @@ body{
 .header{
     height:50px;
     background-color: blue;
+    padding:20px 0;
 }
 .nav{
     height:50px;
     background-color: #1010d0;
+    padding:10px 0;
 }
 .main{
     overflow:auto;
 }
-.leftside{
+.main>.leftside{
     width:250px;
     height:300px;
     float:left;
     background-color: #4040a0;
 }
-.section{
+.main>.section{
     width:500px;
-    float:left;
+    margin:0 250px;
     background-color: #606080;
     height:300px;
 }
-.rightside{
+.main>.rightside{
     width:250px;
-    float:left;
+    float:right;
     background-color: #808060;
     height:300px;
+}
+.maingrid{
+    clear:both;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    height:300px;
+}
+.maingrid>.leftside{
+    background-color: #4040a0;
+}
+.maingrid>.section{
+    background-color: #606080;
+}
+.maingrid>.rightside{
+    background-color: #808060;
 }
 .footer{
     background-color: #a0a040;
     height:50px;
+    padding:20px 0;
 }
