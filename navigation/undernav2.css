@@ -1,0 +1,49 @@
+body, ul{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/*상위메뉴(gnb) 정리*/
+.gnb{
+    display:flex;
+    background-color:burlywood;
+    justify-content: space-evenly;
+    padding:10px;
+}
+/*하위메뉴(snb) 정리*/
+.gnb>li>.snb{
+    position:absolute;
+    margin-top:10px;
+    visibility:hidden;
+}
+/*li 요소가 아닌 bgn에 마우스를 올렸을 때 보임*/
+.gnb:hover .snb{
+    visibility:visible;
+    z-index:10;
+}
+/*bgn에 마우스를 올렸을 때 색이 보임. gnb로 시작하면 상위로 가기 힘들어서 nav부터 시작함*/
+.nav:hover+.background{
+    height:80px;
+    transition:all 0.2s;
+}
+/*상위 li 요소에 마우스를 가져다 대면 상위메뉴가 강조*/
+.gnb>li:hover a{
+    font-weight:bold;
+}
+/*하위 메뉴 간격 넓히기*/
+.snb>li{
+    margin:5px 0 5px -7px;
+}
+.background{
+    position:absolute;
+    display:inline-block;
+    background-color: bisque;
+    width:100%;
+    height:0px;
+}

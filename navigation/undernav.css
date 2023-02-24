@@ -14,6 +14,7 @@ a{
     display:flex;
     justify-content:space-evenly;
     background-color:bisque;
+    height:120px;
 }
 .nav>.gnb>li:hover .subnb{
     display:block;
