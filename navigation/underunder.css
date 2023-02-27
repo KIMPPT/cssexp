@@ -15,21 +15,26 @@ a{
 }
 .gnb>li{
     background-color: aqua;
-    height:150px;
-}
-.gnb>li>.snb{
-    visibility:hidden;
-}
-.gnb>li:hover:nth-child(n) .snb{
-    visibility:visible;
-}
-.gnb>li>.snb>li{
-    margin:10px 0;
-    height:20px;
-}
-.gnb>li>.snb>li:hover{
-    border-bottom:1px solid black;
+    height:120px;
 }
 .gnb>li>.snb{
     background-color: orange;
+    margin:10px 5px;
+    visibility:hidden;
+    opacity:0;
+}
+.gnb>li:hover:nth-child(n) .snb{
+    visibility:visible;
+    opacity:1;
+    transition:all 3s;
+}
+.gnb>li>.snb>li{
+    height:25px;
+    box-sizing: border-box;
+    /*박스 사이즈를 border로 바꾸어 밑줄이 들어가도 사소한 위치변경이 없도록 해줌*/
+}
+.gnb>li>.snb>li:hover{
+    text-decoration:underline 3px black solid;
+    border-bottom:3px dashed rgba(87,94,65,0.3);
+    transition:all 3s;
 }
